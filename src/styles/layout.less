@@ -1,0 +1,74 @@
+@import "normalize.less";
+@import "fluidable.less";
+
+* {
+  box-sizing: border-box;
+}
+
+body > * {
+    max-width: 750px;
+    margin: auto;
+}
+
+body {
+  border-top: 5px solid #ff8072;
+  margin-bottom: 2em;
+}
+
+header {
+
+    & > * {
+      line-height: 7em;
+    }
+
+    h1 {
+        font-size: 1em;
+        white-space: nowrap;
+    }
+    
+    h2 {
+        font-size: 0.8em;
+    }
+    
+    a:link, a:hover, a:visited, a:active {
+      text-decoration: none;
+      color: black;
+      flex: 1;  
+    }
+    
+    nav {
+      padding: 0;
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+      }
+      li {
+        list-style-type: none;
+        padding: 0.67em;
+        margin: 0;
+        display: flex;
+      }
+      
+      button {
+        display: none;
+      }
+    }
+}
+
+article {
+  margin-top: 1em;
+  
+  & > div > h2 {
+    margin-top: 0;
+  }
+
+}
+
+a.UnstyledLink:link, a.UnstyledLink:hover, a.UnstyledLink:visited, a.UnstyledLink:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+@import "responsive.less";
